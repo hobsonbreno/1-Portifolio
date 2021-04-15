@@ -1,0 +1,636 @@
+@import  url ( "https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,600; 0,700 ; 1.300; 1.400; 1.600 & family = Muli: ital, wght @ 0,200; 0,300; 0,400; 0,500; 0,500; 1200; 1.300; 1.400 & display = swap " );
+
+@import  url ( "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" );
+
+* {
+  margem :  0 ;
+  preenchimento :  0 ;
+  estilo de lista : nenhum;
+  decoração de texto : nenhum;
+}
+
+: root {
+  --fonte-primária :  "Baloo Da 2" , serifa;
+  --fonte-secundária :  "Josefin Slab" , serifa;
+  - ação da fonte :  "Muli" , serifa;
+}
+
+html {
+  comportamento de rolagem : suave;
+}
+
+. hamburguer {
+  / * cor de fundo: vermelho; * /
+  largura :  2 rem ;
+  altura :  2 rem ;
+  posição : fixa;
+  índice z :  100 ;
+  direita :  2 rem ;
+  topo :  2 rem ;
+  display : flex;
+  direção flexível : coluna;
+  justify-content : espaço-uniformemente;
+  cursor : ponteiro;
+}
+
+. show-menu . hamburguer {
+  direita :  16 rem ;
+}
+
+. linha {
+  largura :  100 % ;
+  altura :  0,1 rem ;
+  cor de fundo :  # fff ;
+  sombra da caixa :  0,1 rem  0,1 rem  1 px  # 000 ;
+  transição : transformada 1 s ;
+}
+
+. show-menu  # line1 {
+  transformar :  girar ( 45 graus ) transladar ( 0,3 rem ,  0,45 rem );
+}
+. show-menu  # line2 {
+  opacidade :  0 ;
+  visibilidade : oculto;
+}
+. show-menu  # line3 {
+  transformar :  girar ( -45 graus ) transladar ( 0,3 rem ,  -0,45 rem );
+}
+
+. hamburguer  span {
+  posição : absoluta;
+  esquerda :  3 rem ;
+  altura :  2 rem ;
+  largura :  6 rem ;
+  display : flex;
+  justificar-conteúdo : centro;
+  alinhar-itens : centro;
+  cor de fundo :  # a044ff ;
+  cor :  # ffffff ;
+  família da fonte :  var ( - ação da fonte );
+  opacidade :  0 ;
+}
+
+. hamburguer  span :: before {
+  conteúdo :  "" ;
+  posição : absoluta;
+  borda direita :  0,5 rem sólido # a044ff ;
+  borda superior :  0,5 rem transparente sólido;
+  borda esquerda :  0,5 rem transparente sólido;
+  borda inferior :  0,5 rem transparente sólido;
+  esquerda :  -1 rem ;
+}
+
+. show-menu . hamburguer : hover  span {
+  opacidade :  1 ;
+}
+
+header {
+  largura :  100 % ;
+  altura :  100 vh ;
+  estouro : oculto;
+  posição : relativa;
+}
+
+. img-wrapper {
+  largura :  100 % ;
+  altura :  100 % ;
+  estouro : oculto;
+  cor de fundo :  rgba ( 0 ,  0 ,  0 ,  0,8 );
+}
+
+. img-wrapper  img {
+  largura :  100 % ;
+  altura :  100 % ;
+  ajuste ao objeto : capa;
+  opacidade :  0,5 ;
+  animação : zoom 25 s ;
+}
+
+@keyframes zoom {
+  0 % {
+    transformar :  escala ( 1,3 );
+  }
+  100 % {
+    transformar :  escala ( 1 );
+  }
+}
+
+. banner {
+  posição : absoluta;
+  topo :  30 % ;
+  esquerda :  15 % ;
+}
+
+. banner  h1 {
+  cor :  # ffffff ;
+  tamanho da fonte :  3,5 rem ;
+  família de fontes :  var ( --fonte-primária );
+  peso da fonte :  200 ;
+  sombra do texto :  0,3 rem  0,4 rem  2 px  rgba ( 0 ,  0 ,  0 ,  0,4 );
+  altura da linha :  3,5 rem ;
+  margem inferior :  2 rem ;
+  opacidade :  0 ;
+  animação : moveBanner 1 s  0,5 s para a frente;
+}
+
+. banner  p {
+  família-fonte :  var ( --fonte-secundária );
+  cor :  # fff ;
+  tamanho da fonte :  2 rem ;
+  sombra do texto :  0,2 rem  0,2 rem  rgba ( 0 ,  0 ,  0 ,  0,4 );
+  margem inferior :  2 rem ;
+  opacidade :  0 ;
+  animação : moveBanner 1 s  0,7 s para a frente;
+}
+
+. banner  button {
+  família da fonte :  var ( - ação da fonte );
+  cor :  # fff ;
+  transformação de texto : maiúsculas;
+  espaçamento entre letras :  0,1 rem ;
+  fundo :  # 6a3093 ;
+  plano de fundo :  -webkit-linear-gradient (para a direita ,  # a044ff ,  # 6a3093 );
+  plano de fundo :  gradiente linear (para a esquerda ,  # a044ff ,  # 6a3093 );
+  preenchimento :  1 rem  3 rem ;
+  fronteira : nenhum;
+  raio da borda :  5 px ;
+  cursor : ponteiro;
+  opacidade :  0 ;
+  animação : moveBanner 1 s  0,9 s para a frente;
+}
+
+@keyframes moveBanner {
+  0 % {
+    transform :  translateY ( 10 rem ) rotateY ( -30 deg );
+  }
+  100 % {
+    transformar :  translateY ( 0 ) rotateY ( 0 );
+    opacidade :  1 ;
+  }
+}
+
+. barra lateral {
+  largura :  20 rem ;
+  altura :  100 vh ;
+  cor de fundo :  # fff ;
+  posição : fixa;
+  topo :  0 ;
+  direita :  -20 rem ;
+  transição : todos 1 s ;
+  índice z :  80 ;
+}
+
+. show-menu . barra lateral {
+  direita :  0 ;
+}
+
+. menu {
+  posição : absoluta;
+  topo :  40 % ;
+  esquerda :  50 % ;
+  transformar :  traduzir ( -50 % ,  -50 % );
+}
+
+. menu-item {
+  alinhamento de texto : centro;
+  margem inferior :  0,5 rem ;
+}
+
+. menu-link {
+  família da fonte :  var ( - ação da fonte );
+  tamanho da fonte :  2 rem ;
+  cor :  # 555 ;
+  transição : cor 1 s ;
+}
+
+. menu-link : hover {
+  cor :  # 6a3093 ;
+}
+
+. social-media {
+  posição : absoluta;
+  inferior :  2 rem ;
+  largura :  100 % ;
+  display : flex;
+  justify-content : espaço-uniformemente;
+}
+
+. redes sociais  i {
+  cor de fundo :  # 6a3093 ;
+  cor :  rgba ( 255 ,  255 ,  255 ,  1 );
+  altura :  2,5 rem ;
+  largura :  2,5 rem ;
+  tamanho da fonte :  1,5 rem ;
+  display : flex;
+  justificar-conteúdo : centro;
+  alinhar-itens : centro;
+  raio da borda :  50 % ;
+  transição : cor de fundo 1 s ;
+}
+
+. mídia social  i : hover {
+  cor de fundo :  # a044ff ;
+}
+
+. conhecimentos {
+  altura :  100 % ;
+  display : grade;
+  colunas de modelo de grade :  repetir ( 16 ,  1 fr );
+  grid-template-rows :  repeat ( 6 ,  6 rem );
+  intervalo entre linhas :  0,5 rem ;
+}
+
+. conhecimento : enésimo filho ( 1 ) {
+  grade-coluna :  4  /  7 ;
+  grade-fileira :  1  /  3 ;
+}
+
+. conhecimento : enésimo filho ( 2 ) {
+  grade-coluna :  3  /  6 ;
+  grade-fileira :  3  /  5 ;
+}
+
+. conhecimento : enésimo filho ( 3 ) {
+  grade-coluna :  4  /  7 ;
+  grade de linha :  5  /  -1 ;
+}
+
+. conhecimento : enésimo filho ( 4 ) {
+  grade-coluna :  11  /  14 ;
+  grade-fileira :  1  /  3 ;
+}
+
+. conhecimento : enésimo filho ( 5 ) {
+  grade-coluna :  12  /  15 ;
+  grade-fileira :  3  /  5 ;
+}
+
+. conhecimento : enésimo filho ( 6 ) {
+  grade-coluna :  11  /  14 ;
+  grade de linha :  5  /  -1 ;
+}
+
+. sessao-conhecimentos {
+  cor de fundo :  # f5f5f5 ;
+  altura :  100 % ;
+}
+
+. sessao-header {
+  display : flex;
+  alinhar-itens : centro;
+  justificar-conteúdo : centro;
+}
+
+. sessao-header  h1 {
+  família de fontes :  var ( --fonte-primária );
+  tamanho da fonte :  3 rem ;
+  cor :  # 4b4b4b ;
+  borda inferior : sólidos 3 px  # 6a3093 ;
+  margem inferior :  1,5 rem ;
+}
+
+. conhecimento-header {
+  display : flex;
+  alinhar-itens : centro;
+  cor :  # 4b4b4b ;
+}
+
+. conhecimento-header  i {
+  tamanho da fonte :  2,5 rem ;
+}
+
+. conhecimento-cabeçalho  h3 {
+  família-fonte :  var ( --fonte-secundária );
+  tamanho da fonte :  2 rem ;
+  preenchimento esquerdo :  1 rem ;
+}
+
+. conhecimento-texto {
+  família-fonte :  var ( --fonte-secundária );
+  margem superior :  1 rem ;
+}
+
+. conhecimentos-img-wrapper {
+  grade-coluna :  7  /  11 ;
+  grade-fileira :  2  /  6 ;
+  largura :  80 % ;
+  altura :  80 % ;
+}
+
+. conhecimentos-img-wrapper  img {
+  ajuste ao objeto : capa;
+  altura :  100 % ;
+}
+
+. projetos {
+  display : flex;
+  justify-content : espaço-uniformemente;
+  margem inferior :  2 rem ;
+}
+
+. card {
+  largura :  18 rem ;
+  altura :  25 rem ;
+  posição : relativa;
+}
+
+. card-img-wrapper {
+  largura :  100 % ;
+  altura :  100 % ;
+  cor de fundo :  # 262626 ;
+  raio da borda :  0,5 rem ;
+}
+
+. card-img-wrapper  img {
+  ajuste ao objeto : capa;
+  largura :  100 % ;
+  altura :  100 % ;
+  raio da borda :  0,5 rem ;
+  opacidade :  0,8 ;
+  transição : opacidade 0,3 s ;
+}
+
+. cartão : pairar . card-img-wrapper  img {
+  opacidade :  0,5 ;
+}
+
+. card-info {
+  posição : absoluta;
+  inferior :  0 ;
+  opacidade :  0 ;
+  visibilidade : oculto;
+  preenchimento :  2 rem ;
+  sombra do texto :  0,3 rem  0,2 rem  0,3 rem  rgba ( 0 ,  0 ,  0 ,  0,6 );
+  transição : todos 0,3 s ;
+}
+
+. card-info  h2 {
+  família de fontes :  var ( --fonte-primária );
+  tamanho da fonte :  2 rem ;
+  peso da fonte :  500 ;
+  cor :  # eee ;
+}
+
+. card-info  h3 {
+  família da fonte :  var ( - ação da fonte );
+  peso da fonte : mais negrito;
+  cor :  # ff4081 ;
+  margem inferior :  1,5 rem ;
+}
+
+. card-info  p {
+  família-fonte :  var ( --fonte-secundária );
+  cor :  # eee ;
+  peso da fonte :  400 ;
+  largura :  80 % ;
+  margem inferior :  2 rem ;
+}
+
+. btn {
+  fundo :  # 6a3093 ;
+  plano de fundo :  -webkit-linear-gradient (para a direita ,  # a044ff ,  # 6a3093 );
+  plano de fundo :  gradiente linear (para a esquerda ,  # a044ff ,  # 6a3093 );
+  família da fonte :  var ( - ação da fonte );
+  cor :  # eee ;
+  raio da borda :  0,5 rem ;
+  fronteira : nenhum;
+  sombra da caixa :  0  0,1 rem  0,8 rem  rgba ( 0 ,  0 ,  0 ,  0,4 );
+}
+
+. botão de informações do cartão  {
+  largura :  8 rem ;
+  altura :  2,5 rem ;
+}
+
+. cartão : pairar . card-info {
+  inferior :  2 rem ;
+  opacidade :  1 ;
+  visibilidade : visível;
+}
+
+. sessao-contato {
+  largura :  100 % ;
+  altura :  100 vh ;
+  cor de fundo :  # 272727 ;
+  display : flex;
+  alinhar-itens : centro;
+  justificar-conteúdo : centro;
+}
+
+. contato-wrapper {
+  largura :  60 % ;
+  altura :  30 rem ;
+  display : flex;
+  sombra da caixa :  0  2 rem  3 rem  rgba ( 0 ,  0 ,  0 ,  0,5 );
+}
+
+. contato-left {
+  largura :  35 % ;
+  fundo :  gradiente linear ( rgba ( 15 ,  15 ,  15 ,  0,6 ) ,  rgba ( 22 ,  22 ,  22 ,  0,9 )) ,
+    url (imagens / contato.jpg);
+  tamanho do fundo : capa;
+}
+
+. contato-right {
+  largura :  65 % ;
+  cor de fundo :  # eee ;
+  preenchimento :  1 rem  3 rem  3 rem  3 rem ;
+}
+
+. sessao-contato  h1 {
+  largura :  100 % ;
+  alinhamento de texto : centro;
+  família de fontes :  var ( --fonte-primária );
+  cor :  # 272727 ;
+  tamanho da fonte :  3 rem ;
+  peso da fonte : mais leve;
+}
+
+. sessao-contato  form {
+  largura :  100 % ;
+  display : flex;
+  direção flexível : coluna;
+  alinhar-itens : centro;
+}
+
+. input-group {
+  posição : relativa;
+}
+
+. campo {
+  fundo : transparente;
+  fronteira : nenhum;
+  largura :  20 rem ;
+  tamanho da fonte :  1,5 rem ;
+  família-fonte :  var ( --fonte-secundária );
+  borda inferior :  2 px tracejados # 636363 ;
+  altura :  3 rem ;
+  esboço : nenhum;
+  margem :  1 rem  0 ;
+}
+
+. input-group  textarea {
+  tampo de enchimento :  1 rem ;
+  largura máxima :  25 rem ;
+  altura máxima :  3 rem ;
+}
+
+. field-label {
+  posição : absoluta;
+  esquerda :  0 ;
+  topo :  2 rem ;
+  tamanho da fonte :  1 rem ;
+  família-fonte :  var ( --fonte-secundária );
+  transformação de texto : maiúsculas;
+  transição : todos 0,3 s ;
+}
+
+. campo : focus  ~  label {
+  topo :  0 ;
+  tamanho da fonte :  0,7 rem ;
+}
+
+. campo : focus {
+  borda inferior :  1 px sólido;
+}
+
+. btn-submit {
+  tamanho da fonte :  1,2 rem ;
+  transformação de texto : maiúsculas;
+  largura :  80 % ;
+  altura :  2,5 rem ;
+  margem superior :  1 rem ;
+  espaçamento entre letras :  0,2 rem ;
+  cursor : ponteiro;
+  sombra do texto :  0  0,1 rem  0,3 rem  rgba ( 0 ,  0 ,  0 ,  0,5 );
+  sombra da caixa :  0  0,1 rem  0,3 rem  rgba ( 0 ,  0 ,  0 ,  0,3 );
+}
+
+. preenchido {
+    eventos de ponteiro : nenhum;
+}
+
+. sessao-orcamento {
+  largura :  100 % ;
+  altura :  100 vh ;
+  background :  url ( "./imagens//bg-orcamento.jpg" );
+  ajuste ao objeto : capa;
+  display : flex;
+  justificar-conteúdo : centro;
+  alinhar-itens : centro;
+}
+
+. orcamento-wrapper {
+  largura :  60 % ;
+  altura :  80 % ;
+  cor de fundo :  # ffffff99 ;
+  raio da borda :  10 px ;
+  sombra da caixa :  0  0,1 rem  0,3 rem  rgba ( 0 ,  0 ,  0 ,  0,5 );
+  posição : relativa;
+}
+
+. sessao-orcamento  h1 {
+  posição : absoluta;
+  topo :  -2,5 rem ;
+  esquerda :  2 rem ;
+  fundo :  # 6a3093 ;
+  plano de fundo :  -webkit-linear-gradient (para a direita ,  # a044ff ,  # 6a3093 );
+  plano de fundo :  gradiente linear (para a esquerda ,  # a044ff ,  # 6a3093 );
+  preenchimento :  0  3 rem ;
+  cor :  # fff ;
+  família de fontes :  var ( --fonte-primária );
+  tamanho da fonte :  3 rem ;
+  peso da fonte : mais leve;
+  sombra da caixa :  0  0,1 rem  0,3 rem  rgba ( 0 ,  0 ,  0 ,  0,5 );
+  raio da borda :  10 px ;
+}
+
+. sessao-orcamento  form {
+  margem :  4 rem ;
+  display : grade;
+  colunas de modelo de grade : auto 1 fr ;
+  lacuna da coluna :  2 rem ;
+  lacuna de linha :  2 rem ;
+}
+
+. sessao-orcamento  label {
+  família da fonte :  var ( - ação da fonte );
+  tamanho da fonte :  1,5 rem ;
+}
+
+. entrada de sessão-orcamento  [ type = "número" ] {
+  família-fonte :  var ( --fonte-secundária );
+  largura :  4 rem ;
+  tamanho da fonte :  2 rem ;
+  esboço : nenhum;
+  raio da borda :  10 px ;
+  fronteira : nenhum;
+  preenchimento :  0,3 rem ;
+}
+
+. btn-orcamento {
+  transformação de texto : maiúsculas;
+  preenchimento :  1 rem ;
+  cursor : ponteiro;
+  grade-coluna :  2 ;
+}
+
+rodapé {
+  largura :  100 % ;
+  altura :  7 rem ;
+  cor de fundo :  # 17181b ;
+  display : flex;
+  justificar-conteúdo : centro;
+  alinhar-itens : centro;
+}
+
+. footer-content {
+  largura :  60 % ;
+  display : flex;
+  justify-content : espaço entre;
+}
+
+. footer-content  p {
+  família-fonte :  var ( --fonte-secundária );
+  cor :  # a7a7a7 ;
+  tamanho da fonte :  1,2 rem ;
+}
+
+. social-list  a {
+  margem :  0  2 rem ;
+  cor :  # a7a7a7 ;
+  tamanho da fonte :  1,3 rem ;
+}
+
+. social-list  ul {
+  display : flex;
+}
+
+# link-topo {
+  posição : fixa;
+  direita :  3 rem ;
+  inferior :  3 rem ;
+  largura :  3 rem ;
+  altura :  3 rem ;
+  fundo :  # 6a3093 ;
+  plano de fundo :  -webkit-linear-gradient (para a direita ,  # a044ff ,  # 6a3093 );
+  plano de fundo :  gradiente linear (para a esquerda ,  # a044ff ,  # 6a3093 );
+  display : flex;
+  justificar-conteúdo : centro;
+  alinhar-itens : centro;
+  cor :  # fff ;
+  raio da borda :  .3 rem ;
+  sombra da caixa :   0  0,1 rem  0,6 rem  # 00000009 ;
+}
+© 2021 GitHub, Inc.
+Termos
+Privacidade
+Segurança
+Status
+Docs
+Entre em contato com o GitHub
+Preços
+API
+Treinamento
+Blog
+Cerca de

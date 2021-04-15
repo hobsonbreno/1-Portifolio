@@ -1,0 +1,19 @@
+{
+    " nome ": " ",
+    " short_name ": " ",
+    " ícones ": [
+        {
+            " src ": " imagens / android-chrome-192x192.png ",
+            " tamanhos ": " 192x192 ",
+            " tipo ": " imagem / png "
+        },
+        {
+            " src ": " imagens / android-chrome-512x512.png ",
+            " tamanhos ": " 512x512 ",
+            " tipo ": " imagem / png "
+        }
+    ],
+    " theme_color ": " #ffffff ",
+    " background_color ": " #ffffff ",
+    " display ": " autônomo "
+}
