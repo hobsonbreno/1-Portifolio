@@ -147,13 +147,13 @@ header {
   font-family: var(--font-action);
   color: #fff;
   text-transform: uppercase;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.3rem;
   background: #6a3093;
   background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
   background: linear-gradient(to left, #a044ff, #6a3093);
-  padding: 1rem 3rem;
-  border: none;
-  border-radius: 5px;
+  padding:1rem;
+  border:none;
+  border-radius:10px;
   cursor: pointer;
   opacity: 0;
   animation: moveBanner 1s 0.9s forwards;
@@ -623,3 +623,13 @@ footer{
   box-shadow:  0 0.1rem 0.6rem #00000009;
 }
 
+#link-contato{
+  background: #6a3093;
+  background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
+  background: linear-gradient(to left, #a044ff, #6a3093);
+  font-family: var(--font-action);
+  color: #eee;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
+}
